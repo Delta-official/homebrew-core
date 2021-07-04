@@ -29,6 +29,7 @@ class Nano < Formula
     system "./configure", "--disable-debug",
                           "--disable-dependency-tracking",
                           "--prefix=#{prefix}",
+                          "--disable-nls", 
                           "--sysconfdir=#{etc}",
                           "--enable-color",
                           "--enable-extra",
